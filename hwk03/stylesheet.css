@@ -23,8 +23,11 @@ body {margin: 0;}
 
 .recipeimage {
     height: 400px;
-
 }
+
+@media (max-width: 769px) {
+    .recipeimage {height: 70vw}
+   }
 
     .recipecontenttop {
        
@@ -34,14 +37,34 @@ display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;}
+
+@media (max-width: 480px) {
+ .recipecontenttop {flex-direction: column;}
+}
+
+@media (max-width: 769px) {
+    .recipecontenttop {flex-direction: column;
+    justify-content: center;
+align-items: center;}
+
+   }
+   
     
 
     .recipename {font-size: 32px;}
+
+    @media (max-width: 480px) {
+        .recipename {font-size: 26px;}
+       }
 
     .recipenameandingredients {
    width: 30vw;
         margin-left: 75px;
         font-family: 'Barlow', sans-serif;}
+
+        @media (max-width: 769px) {
+            .recipenameandingredients {width: 80vw}
+           }
 
 .recipecontentbottom {
     font-family: 'Barlow', sans-serif;
@@ -52,6 +75,9 @@ justify-content: center;}
 
 .steps {  font-family: 'Barlow', sans-serif;}
 
+.stepsheader {font-family: 'Josefin Slab', serif;
+font-size: 48px;}
+
 .stepscontainer {
     display: flex;
     flex-direction: column;
@@ -59,6 +85,14 @@ justify-content: center;}
     align-items: center;
     line-height: 150%;
 }
+
+@media (max-width: 769px) {
+    .stepscontainer {
+    width: 80vw;
+    }
+
+   }
+   
 
 
     footer {

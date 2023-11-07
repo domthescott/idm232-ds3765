@@ -14,25 +14,32 @@ body {margin: 0;}
 
 
 .recipecontentholder {
-    margin-top: 50px;
-    margin-bottom: 50px;
+  
     display: flex;
     flex-direction: column;
 }
 
+
+
 .recipeimage {
-    width: 30vw;
-margin-right: 75px;}
+    height: 400px;
+
+}
 
     .recipecontenttop {
+       
+        margin-top: 50px;
+        margin-bottom: 50px;
 display: flex;
 flex-direction: row;
-justify-content: center;}
+justify-content: center;
+align-items: center;}
     
 
     .recipename {font-size: 32px;}
 
     .recipenameandingredients {
+   width: 30vw;
         margin-left: 75px;
         font-family: 'Barlow', sans-serif;}
 

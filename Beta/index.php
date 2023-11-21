@@ -141,14 +141,14 @@ if ($resultImageSources === false || $resultSteps === false) {
 
     // Output <img> and <p> elements in alternating fashion
     for ($i = 0; $i < $maxCount; $i++) {
-        // Output <img> element if there is a corresponding image source
-        if (isset($imageSourcesArray[$i])) {
-            echo '<img src="images/' . $imageSourcesArray[$i] . '" alt="Step Image" class="step"><br>';
-        }
-
         // Output <p> element if there is a corresponding step
         if (isset($stepsArray[$i])) {
             echo '<p class="steps">' . $stepsArray[$i] . '</p>';
+        }
+
+        // Output <img> element if there is a corresponding image source
+        if (isset($imageSourcesArray[$i])) {
+            echo '<img src="images/' . $imageSourcesArray[$i] . '" alt="Step Image" class="step"><br>';
         }
     }
 }

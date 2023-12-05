@@ -17,6 +17,8 @@ body {margin: 0;}
   
     display: flex;
     flex-direction: column;
+    
+    align-items: center;
 }
 
 .backdiv {font-family: 'Barlow', sans-serif;
@@ -34,11 +36,12 @@ color: #333;
 }
 
 @media (max-width: 769px) {
-    .recipeimage {height: 70vw}
+    .recipeimage {height: auto;
+    width: 80vw}
    }
 
     .recipecontenttop {
-       
+       width: 70vw;
         margin-top: 50px;
         margin-bottom: 50px;
 display: flex;
@@ -91,7 +94,8 @@ font-family: 'Barlow', sans-serif;}
     #ingredientimagelist {width: 50vw;}
 
     @media (max-width: 769px) {
-        #ingredientimagelist {width: 80vw}
+        #ingredientimagelist {width: 80vw;
+        height: auto;}
        }
 
     .recipename {font-size: 32px;}
@@ -106,15 +110,19 @@ font-family: 'Barlow', sans-serif;}
         font-family: 'Barlow', sans-serif;}
 
         @media (max-width: 769px) {
-            .recipenameandingredients {width: 80vw}
+            .recipenameandingredients {width: 80;
+            margin-left: 0px;
+        width: 80vw}
            }
+           
 
 .recipecontentbottom {
     font-family: 'Barlow', sans-serif;
     background-color: #FBA268;
     display: flex;
 flex-direction: row;
-justify-content: center;}
+justify-content: center;
+width: 100%;}
 
 .steps {  font-family: 'Barlow', sans-serif;
 width: 50vw;

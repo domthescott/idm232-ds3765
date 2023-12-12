@@ -1,0 +1,256 @@
+body {
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+}
+
+#navbar {width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;}
+    
+    h5 {color: white;
+        font-family: 'Josefin Slab', serif;
+        font-size: 24px;
+    }
+
+
+    .backdiv {font-family: 'Barlow', sans-serif;
+        width: 100%;
+        margin-top: 30px;
+        }
+        
+        .back {margin-left: 30px;
+        font-size: 24px;
+        color: #333;
+        }
+
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.contenttopfirst{
+    margin-top: 50px;
+    display: flex;
+  
+    align-items: start;
+    flex-direction: row;
+    width: 100%;
+    
+}
+
+
+@media (max-width: 769px) {
+    .contenttopfirst 
+    {flex-direction: column;
+   align-items: center;
+}
+   }
+
+   .mainimageandadditionalinfo {
+display: flex;
+flex-direction: column;
+   }
+
+   .additionalinfo {
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.additionalinfoone {
+    display: flex;
+    flex-direction: column;
+  justify-content: space-around;
+}
+
+.additionalinfotwo {
+ margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+
+
+.mainimage {
+    background-color: red;
+    width: 30vw;
+    height: 100%;
+  
+    
+}
+
+@media (max-width: 769px) {
+    .mainimage 
+    {width: 80vw;
+    height: auto;}
+   }
+
+.recipenameandinfo {
+  width: 30vw;
+    margin-left: 50px;
+ 
+}
+
+@media (max-width: 769px) {
+    .recipenameandinfo 
+    {width: 80vw;
+    margin-left: 0px;
+    }
+   }
+
+.recipename {
+    font-size: 32px;
+}
+
+
+.contenttopsecond{
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+
+@media (max-width: 769px) {
+    .contenttopsecond 
+    {flex-direction: column;
+    align-items: center;
+}
+   }
+
+.ingredientsimage 
+{
+    width: 35vw;
+    height: 100%;
+}
+
+
+@media (max-width: 769px) {
+    .ingredientsimage 
+    {width: 80vw;
+    height: auto;}
+   }
+
+.ingredientsheaderandinfo {
+    width: 30vw;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 769px) {
+    .ingredientsheaderandinfo
+    {width: 80vw;
+    margin-left: 0px;}
+   }
+
+   .contentbottom {
+    width: 100%;
+    background-color: #FBA268;
+margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .stepscontainer {
+
+ display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    gap: 16px; /* Adjust the gap between columns */
+width: 70vw;
+margin-bottom: 50px;
+   }
+
+   @media (max-width: 769px) {
+    .stepscontainer 
+    {  display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;}
+   }
+   
+   
+   @media (max-width: 480px) {
+    .stepscontainer 
+    { width: 85vw;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+    }
+   }
+   
+
+.singlestep {
+
+ border: 2px solid #333; /* 2px solid light grey border */
+    border-radius: 8px; /* 8px border-radius for rounded corners */
+    box-shadow: 2px 2px 4px #333; /* Horizontal offset, vertical offset, blur radius, and color of the shadow */
+    /* Additional styling for your div */
+    padding: 10px; /* Add padding if needed */
+    
+    display: flex;
+    
+flex-direction: column;
+align-items: center;}
+
+  @media (max-width: 480px) {
+    .singlestep 
+    { width: 100%;
+      }
+   }
+
+
+   .stepimage {width: 85%;
+   margin-top: auto;}
+
+   .steptext {width: 85%;}
+
+ footer {
+   
+        height: 100px;
+        font-family: 'Barlow', sans-serif;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+        .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer-left,
+    .footer-right {
+        padding: 5px;
+    }
+    
+    @media (min-width: 768px) {
+        .footer-container {
+            flex-direction: row;
+        }
+    
+        .footer-left {
+            padding-right: 20px;
+        }
+    }
+ 
